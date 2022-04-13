@@ -1,0 +1,37 @@
+.container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item {
+  display: flex;
+
+  list-style: none;
+  justify-content: space-around;
+  box-shadow: 3px 3px 5px 1px teal;
+  margin-bottom: 15px;
+  padding: 5px 0;
+  border-radius: 3px;
+}
+.status {
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: rebeccapurple;
+}
+.name {
+  color: blueviolet;
+  font-size: 25px;
+}
+.avatar {
+  object-fit: contain;
+}
+.online {
+  composes: status;
+  background: green;
+}
+.offline {
+  composes: status;
+  background: red;
+}
